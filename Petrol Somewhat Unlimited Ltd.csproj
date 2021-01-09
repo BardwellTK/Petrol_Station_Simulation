@@ -219,12 +219,14 @@
     <None Include="Resources\Image1.png" />
     <None Include="Resources\Untitled-1.png" />
     <None Include="Resources\Icon1.ico" />
-    <Content Include="ServiceLogs.mdf">
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ServiceLogs_log.ldf">
+    <Content Include="Database_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>ServiceLogs.mdf</DependentUpon>
+      <DependentUpon>Database.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
